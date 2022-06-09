@@ -1,0 +1,134 @@
+<!--ATHENAHACKS 2022
+    Feburary 20, 2022
+    Home - HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my happy place - home</title>
+
+    <!--important Bootstrap import-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!--Google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100,300,800&display=swap" rel="stylesheet">
+
+    <!--custom CSS import-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class = "login">
+        <div class="login-container">
+            <div class="row mt-4">
+                <h2 class="col-12">welcome to</h2>
+                <h1 class="col-12 mt-4">my happy place</h1>
+                <div class="col-12 mt-4">
+                    <!--<form id="contact-form">
+                        <div class="form-row">
+    
+                            <div class="col-12 mt-2 col-sm-5 mt-sm-0">
+                                <label for="username" class="sr-only">Username:</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                            </div> 
+    
+                            <div class="col-12 mt-2 col-sm-5 mt-sm-0">
+                                <label for="password" class="sr-only">Password:</label>
+                                <input type="text" class="form-control" id="password" placeholder="Password">
+                            </div> 
+    
+                            <div class="col-12 mt-2 col-sm-auto mt-sm-0">
+                                <button role="button" type="submit" class="btn btn-warning login-btn">Login</button>
+                            </div> 
+    
+                        </div> 
+                    </form> -->
+                </div> <!-- .col -->
+                <div id = "login-img">
+                    <a href = "home.html" onclick="document.location=this.id + 'home.html';return false">
+                        <img id = "login-box" src = "images/chest-closed.png" alt="happy place box">
+                    </a>  
+                </div>
+            </div> <!-- .row -->
+        </div>
+    </div>
+
+
+    <!--start up with info if user new-->
+    <div id = "new-user">
+        <div id = "welcome">
+            <!--intro user to what happy place is-->
+            <!--<p>let's begin.</p>-->
+        </div>
+        <div id = "user-name-input">
+            <!--first, we'll need your name-->
+            <!--thanks, _____-->
+
+        </div>
+        <div id = "first-memory-input">
+            <!--this is your first, so make it a good one-->
+            <!--no pressure by the way-->
+            <!--image-->
+            <!--caption-->
+        </div>
+        <div id = "transition">
+            <!--looks like you've got the hang of it :)-->
+            <!--feel free to enter your happy place (whenever you're ready)-->
+        </div>
+    </div>
+
+
+
+    <!--enter happy place-->
+    <div id = "enter-hp">
+
+    </div>
+
+    
+    
+
+
+<!--make memories and view memories-->
+
+
+    <!--footer-->
+    <div id="footer">
+        Ⓒ super cool hackers (team 4), AthenaHacks 2022.
+    </div>
+
+    <!--important Bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--
+    Note: when deploying, replace "development.js" with "production.min.js". 
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+
+    <!-- Load our React component. -->
+    <!--<script src="like_button.js"></script>-->
+
+    <script>
+        // --- EVENT DRIVEN PROGRAMMING
+        document.querySelector("#login-box").onmouseenter = function() {
+            // Change this image to another image
+            this.src = "images/chest-open.png";
+            this.alt = "image of happy open chest";
+        }
+        document.querySelector("#login-box").onmouseleave = function() {
+            this.src = "images/chest-closed.png";
+        }
+        document.querySelector("#login-img") = function(event) {
+            event.preventDefault();
+        }
+    </script>
+
+</body>
+</html>

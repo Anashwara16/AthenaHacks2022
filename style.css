@@ -1,0 +1,358 @@
+/* ATHENAHACKS 2022
+    Feburary 20, 2022
+    (style.css)
+*/
+
+html,body{ /* sets up formatting info for the "main body" of the website */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 219, 102);
+    color: white;
+}
+
+* { /* selects ALL elements on html file to format accordingly */
+    box-sizing: border-box;
+} 
+
+nav {
+    background-color: black;
+}
+
+/*login info*/
+
+.form-control {
+    background: white;
+    border:rgb(204, 167, 5);
+}
+.login {
+    text-align: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn-enter {
+    background-color: rgb(212, 172, 38);
+    border:rgb(122, 101, 3);
+    color: white;
+}
+
+.btn-enter:hover {
+    background-color: rgb(241, 240, 235);
+    color: rgb(212, 172, 38);
+}
+
+.login-btn {
+    background-color: rgb(212, 172, 38);
+    border:rgb(122, 101, 3);
+    color: white;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgb(212, 172, 38);
+    border:rgb(122, 101, 3);
+}
+
+.login-btn:hover {
+    background-color: rgb(241, 240, 235);
+    color: rgb(212, 172, 38);
+}
+
+#happyImgUpload {
+    background-color: rgb(212, 172, 38);
+    border:rgb(122, 101, 3);
+}
+
+input[type=file]::file-selector-button {
+    background-color: rgb(241, 240, 235);
+    color: rgb(212, 172, 38);
+    border:rgb(245, 219, 102);
+}
+
+input[type=file]::file-selector-button:hover {
+    color: rgb(241, 240, 235);
+    border: rgb(212, 172, 38);
+    background-color:rgb(235, 193, 5);
+}
+    
+
+.login h1 {
+    font-size: 50px;
+}
+
+.login h2 {
+    font-size: 30px;
+}
+
+#login-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+/* home info */
+#home-row {
+    padding-top: 50px;
+}
+
+.team-member:hover {
+    background-color: rgb(253, 237, 144);
+    color: rgb(235, 193, 5);
+} 
+
+.row-flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+#artists-bootstrap {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.team-member {
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    text-align: center;
+    border: 5px solid rgb(221, 169, 28);
+    background-color: rgb(236, 205, 67);
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-bottom: 10%;
+}
+.link {
+    color: white;
+}
+
+.team-member:hover .link{
+    color: rgb(235, 193, 5);
+}
+
+/* make and view info */
+
+#header {
+    padding: 20px;
+}
+
+#header h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#header h3 {
+    text-align: center;
+}
+
+#back {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+#back .link {
+    text-align: center;
+}
+
+#back a:hover {
+    color:rgb(134, 105, 7); 
+}
+
+/* make */
+#mem-select {
+    text-align: center;
+    padding-top: 50px;
+}
+#memories {
+    border: 2px solid rgb(221, 169, 28);
+    background-color: rgb(253, 237, 144);
+    color: rgb(202, 166, 4);
+}
+
+
+#mem-name {
+    text-align: center;
+    padding: 20px;
+}
+
+.mem-view-one .row .item {
+    float: left;
+    width: 98%;
+    padding: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin: 1%;
+    margin-bottom: 0.5%
+}
+/* sets info for the descriptions in the rows within 'new product' */
+.mem-view-one .row .description {
+    float: left;
+    width: 98%;
+    margin: 0.5%;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 20px;
+}
+.mem-view-one .row .description h2 {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.mem-view-one {
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.mem-img {
+    width: 100%;
+}
+
+.mem-upload {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 40px;
+}
+
+.mem-text {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+#inputGroupFile02 {
+    margin-left: 0px;
+}
+
+.custom-file-upload {
+    border: 1px solid rgb(158, 28, 28);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* sets up formatting info for webpage footer */
+#footer {
+    background-color: rgb(252, 249, 249);
+    text-align: center;
+    color: rgb(204, 167, 5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+
+#happy-playlist {
+    margin-left: 38%;
+}
+
+@media(min-width: 576px) {
+    .login {
+        padding-top: 100px;
+    }
+    .login h1 {
+        font-size: 65px;
+    }
+    
+    .login h2 {
+        font-size: 45px;
+    }
+    #artists-bootstrap {
+        padding-top: 100px;
+    }
+
+}
+@media(min-width: 768px) {
+    .login {
+        padding-top: 100px;
+    }
+    .login h1 {
+        font-size: 75px;
+    }
+    
+    .login h2 {
+        font-size: 50px;
+    }
+    .team-member {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        margin-left: 10%;
+    }
+    #artists-bootstrap {
+        width: 100%;
+        margin-top: 110px;
+        padding-top: 30px;
+    }
+    .team-row {
+        width: 100%;
+    }
+    
+    .mem-view-one {
+        height: 39em;
+        padding-top: 0%;
+        display: flex;
+        align-items: center;
+     }
+     .mem-view-one .row .item { 
+         width: 39%;
+     }
+     .mem-view-one .row .description {
+         width: 48%;
+         font-size: 20px;
+         padding-left: 6%;
+         text-align: left;
+     }
+     .mem-view-one .row .description h2 {
+         font-size: 50px;
+         margin-bottom: 30px;
+     }
+
+    .mem-img {
+        width: 120%;
+        margin-top: 90px;
+    }
+}
+
+@media(min-width: 992px) {
+    .login {
+        padding-top: 75px;
+    }
+    .login h1 {
+        font-size: 100px;
+    }
+    
+    .login h2 {
+        font-size: 65px;
+    }
+    .mem-view-one {
+        width: 880px;
+    }
+    .mem-img {
+        width: 120%;
+        margin-top: 12%;
+    }
+    .team-member h1 {
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .team-member h1 {
+        font-size: 55px;
+    }
+}
+

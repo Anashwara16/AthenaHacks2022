@@ -1,0 +1,100 @@
+<!--ATHENAHACKS 2022
+    Feburary 20, 2022
+    Home - HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my happy place - home</title>
+
+    <!--important Bootstrap import-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!--Google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100,300,800&display=swap" rel="stylesheet">
+
+    <!--custom CSS import-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id = "header">
+        <h2>make memories</h2>
+        <h3>we're glad you've decided to share more of what makes you happy :) </h3>
+    </div>
+
+    <div id = "mem-select">
+        <label for="memories"> please share:</label>
+        <select name="memories" id="memories">
+            <option value="general"> a beautiful memory </option>
+        <option value="animal">your fuzzy companion that makes you the most happy </option>
+        <option value="food">a dish that fill you with warmth</option>
+        <option value="music">a song that never fails to move you to its rhythm</option>
+        <option value="sunshine">a time you were having fun in the sun</option>
+        <option value="outfit">an outfit that makes you feel like the true you</option>
+        <option value="person">a person that always makes you smile</option>
+        </select>
+        <form>
+            <div class="form-group mem-upload">
+                <label for="happyImgUpload" >upload happy image here</label>
+                <input type="file" class="form-control-file" id="happyImgUpload">
+            </div>
+            <div class="form-group mem-text">
+                <label for="happyText">please explain the significance here... :)</label>
+                <textarea class="form-control" id="happyText" rows="3"></textarea>
+            </div>
+            <button type="submit" class = "btn login-btn">Submit</button>
+          </form>
+        <!--<div class = "mem-upload">
+            <div class="input-group mb-5">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile02">
+                  <label class="custom-file-label" for="inputGroupFile02">upload happy image here</label>
+                </div>
+                <div class="input-group-append">
+                  <span class="input-group-text" id="">Upload</span>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <!--<form>
+         <br />
+        <textarea rows = "3" cols = "50" name = "description">
+           Please explain the significance here... :)
+        </textarea>
+        <p>
+        <input type="submit" value="Submit">
+        </p>
+     </form>-->
+    
+
+    <div id = "back">
+        <a class ="link" href="home.html"> ← back</a>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        Ⓒ super cool hackers (team 4), AthenaHacks 2022.
+    </div>
+
+    <!--important Bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--
+    Note: when deploying, replace "development.js" with "production.min.js". 
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+
+    <!-- Load our React component. -->
+    <!--<script src="like_button.js"></script>-->    
+
+</body>
+</html>
